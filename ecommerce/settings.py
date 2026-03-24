@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
-import os 
+
+
 import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -10,7 +11,7 @@ os.environ.get('DEBUG', 'False') == 'True'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
